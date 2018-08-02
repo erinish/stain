@@ -156,7 +156,7 @@ class Stain():
             if len(validation) != 0:
                 with self.red():
                     print("Error: invalid formatting argument {}".format(validation))
-                    sys.exit(1)
+                raise AttributeError
 
             return partial(self._line_formatter, parsed_args)
         elif raw_args[0].isupper():
