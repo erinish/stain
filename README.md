@@ -1,14 +1,14 @@
 # Stain 
 
-Taking care of the dirty details of outputting terminal colors.
+Stain helps you color your terminal output without having to worry about formatting classes,
+replacement print functions, or using anything more than familiar string manipulations. 
 
 ## Getting Started
 
 Using the basics of stain is fast and easy. 
 
-Out of the box, stain provides a context manager that handles pre-printing of
-formatting characters before the block executes and post-printing of a formatting
-reset.
+Stain provides a context manager that handles pre and post-printing of formatting
+characters. 
 
 Ex:
 ```PYTHON
@@ -16,9 +16,10 @@ from stain import Stain
 
 stain = Stain()
 
-with stain.red():
+with stain.red(): # the context manager __enter__ prints \033[31m
     print("This line is red.")
     print("So is this one.")
+# the context manager __exit__ prints \033[0m
 
 print("But this one is not.")
 ```
@@ -122,29 +123,11 @@ You will need to hand-reset at the end of each line to prevent scrolling backgro
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+pip install stain
 
 ## Running the tests
 
 make tests
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## License
 
