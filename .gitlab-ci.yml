@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+  - deploy
+
+code_copy:
+  stage: build
+  script: 
+    - cp -r * /home/devops/code/stain/
+    - chown -R devops:devops /home/devops/code/stain/
+  tags:
+    - deploy
+
+flake_tests:
+  stage: test
+  script:
+    - cd /home/devops/code/stain/
+    - make flake8
+  tags:
+    - deploy
