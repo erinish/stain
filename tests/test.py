@@ -28,3 +28,8 @@ def print_error(msg):
 print_error('something went horribly wrong.')
 
 print(stain.RED + 'RED:' + stain.WHITE + 'WHITE:' + stain.BLUE + 'BLUE' + stain.RESET)
+
+with stain.black_on_light_gray():
+    print("This will have a background color" + stain.RESET)
+
+print(stain.BOLD_RED_ON_BLACK_UNDERLINE + "MY EYES" + stain.RESET)
