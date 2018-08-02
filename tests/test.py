@@ -33,3 +33,5 @@ with stain.black_on_light_gray():
     print("This will have a background color" + stain.RESET)
 
 print(stain.BOLD_RED_ON_BLACK_UNDERLINE + "MY EYES" + stain.RESET)
+
+print("Hello " + stain.BLACK + " darkness " + stain.RESET + "my old friend.")

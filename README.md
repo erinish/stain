@@ -30,7 +30,7 @@ from stain import Stain
 
 stain = Stain()
 
-print("Hello " + stain.BLACK " darkness " + stain.RESET + "my old friend.")
+print("Hello " + stain.BLACK + " darkness " + stain.RESET + "my old friend.")
 ```
 
 
