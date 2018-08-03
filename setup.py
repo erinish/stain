@@ -10,12 +10,12 @@ from setuptools import find_packages, setup, Command
 
 # Package meta-data.
 NAME = 'stain'
-DESCRIPTION = 'Intuitive terminal coloring'
+DESCRIPTION = 'Taking care of the dirty parts of terminal colors.'
 URL = 'https://github.com/erinish/stain'
 EMAIL = 'me@example.com'
 AUTHOR = 'Eric Rinish'
-REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1dev'
+REQUIRES_PYTHON = '>=3.4.0'
+VERSION = '0.2dev1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -93,9 +93,8 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages('stain', exclude=('tests',)),
+    packages=find_packages(exclude=('tests',)),
     entry_points={
-#        'console_scripts': ['ledger=ledger.client:cli'],
     },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
@@ -105,7 +104,10 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],

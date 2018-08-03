@@ -99,10 +99,10 @@ This is due to how background color determination works when scrolling a termina
 
 When printing a newline at the bottom of the screen such that everything needs to shift
 upward, the background color will bleed onto the next line. The context manager cannot
-print the reset before print statements in the block print theirs, so ugly background
+print the reset before print statements in the block print their newlines, so ugly background
 color bleeding will occur. 
 
-This is also true of the Inverse formatter.
+This is also true of the Reverse formatter.
 
 To enable background colors with the context manager, do the following:
 ```PYTHON

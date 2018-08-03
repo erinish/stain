@@ -48,10 +48,9 @@ SAFE_FORMATTING = dict(default='39', black='30', red='31',
                        light_yellow='93', light_blue='94', light_magenta='95',
                        light_cyan='96', white='97', on_default='49',
                        bold='1', dim='2', underline='4',
-                       blink='5', reverse='7', hidden='8',
-                       reset_all='0', reset_bold='21', reset_dim='22',
-                       reset_underline='24', reset_blink='25', reset_reverse='27',
-                       reset_hidden='28')
+                       blink='5', hidden='8', reset_all='0',
+                       reset_bold='21', reset_dim='22', reset_underline='24',
+                       reset_blink='25', reset_reverse='27', reset_hidden='28')
 
 
 class Stain():
